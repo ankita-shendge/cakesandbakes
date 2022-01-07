@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 12fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "leftsidebar header rightsidebar"
+    " leftsidebar main rightsidebar"
+    " footer footer footer";
+}
+
+.leftsidebar {
+  grid-area: leftsidebar;
+  background-color: whitesmoke;
+}
+.rightsidebar {
+  grid-area: rightsidebar;
+  background-color: whitesmoke;
+}
+.header {
+  grid-area: header;
+  background-color: whitesmoke;
+  
+}
+.header h1 {
+  float: left;
+  padding: 1% 1%;
+  color: rgb(165, 79, 42);
+  font-weight: 200;
+  font-size: 350%;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.header a {
+  color: rgb(165, 79, 42);
+  font-weight: 300;
+  text-decoration: none;
+  position: flex;
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  padding: 2.5% 2%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 120%;
+}
+.header a:hover {
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+  list-style: none;
+  line-height: 1%;
+}
+
+.main  {
+  grid-area: main;
+  
+}
+.main img{
+  background-repeat: no-repeat;
+  object-fit: fill;
+  width: 100%;
+  height: 90vh;
+ margin-bottom: -0.3%;
+ align-items: center;
+  position: relative;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(206, 206, 206);
+  text-align: center;
+  padding: 3.5%;
+
+}
+.footer h3 {
+  font-family: monospace;
+  font-weight: 400;
+  font-size: larger;
+}
+.footer a {
+  color: black;
+  font-size: large;
+}
